@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="149d4610-7d47-4dca-b65e-c56062a7b6a0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jj6BwJIpCwGQNdw0f4Avwj36nI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode_24" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Solution (4)">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nowcoder_20.Main" />
+      <module name="2020_11_12_leetcod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nowcoder_20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode_26.Solution" />
+      <module name="2020_11_12_leetcod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode_26.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode_29.Solution" />
+      <module name="2020_11_12_leetcod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode_29.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode_24.Solution" />
+      <module name="2020_11_12_leetcod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode_24.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode_692.Solution" />
+      <module name="2020_11_12_leetcod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode_692.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Solution (4)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Solution (3)" />
+        <item itemvalue="Application.Solution (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="149d4610-7d47-4dca-b65e-c56062a7b6a0" name="Default Changelist" comment="" />
+      <created>1604305021797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604305021797</updated>
+      <workItem from="1604305023448" duration="14315000" />
+      <workItem from="1604363525688" duration="5453000" />
+      <workItem from="1604389491625" duration="7658000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1604394483513">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604394483513" />
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1604404161093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604404161093" />
+    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1604404161092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604404161092" />
+    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1604404161092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604404161092" />
+    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1604404161092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604404161092" />
+    <state width="1493" height="351" key="GridCell.Tab.1.bottom" timestamp="1604404161093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604404161093" />
+    <state width="1493" height="351" key="GridCell.Tab.1.center" timestamp="1604404161093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604404161093" />
+    <state width="1493" height="351" key="GridCell.Tab.1.left" timestamp="1604404161093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604404161093" />
+    <state width="1493" height="351" key="GridCell.Tab.1.right" timestamp="1604404161093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="351" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604404161093" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1604389499229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604389499229" />
+    <state x="356" y="49" key="new project wizard" timestamp="1604404157103">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="356" y="49" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604404157103" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604391648775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604391648775" />
+  </component>
+</project>

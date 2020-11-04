@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4aa3ba36-f1b9-48d1-a9a5-4e1d85fbd98f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jXoSEoKk97YpBmPl3vwxXRgYgR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.Main" />
+      <module name="2020_10_29_Set+Map+(链表的作业)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="链表作业.MyLinkedList1.Main" />
+      <module name="2020_10_29_Set+Map+(链表的作业)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="链表作业.MyLinkedList1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="链表作业.Main" />
+      <module name="2020_10_29_Set+Map+(链表的作业)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="链表作业.MyLinkedList1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
+      <module name="2020_10_29_Set+Map+(链表的作业)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.TestCase" />
+      <module name="2020_10_29_Set+Map+(链表的作业)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.TestCase" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4aa3ba36-f1b9-48d1-a9a5-4e1d85fbd98f" name="Default Changelist" comment="" />
+      <created>1603959794548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603959794548</updated>
+      <workItem from="1603959798011" duration="14233000" />
+      <workItem from="1604042814444" duration="8303000" />
+      <workItem from="1604064318345" duration="4788000" />
+      <workItem from="1604121893826" duration="9521000" />
+      <workItem from="1604138349308" duration="278000" />
+      <workItem from="1604193143179" duration="4258000" />
+      <workItem from="1604237071902" duration="3566000" />
+      <workItem from="1604304921028" duration="1292000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604240115198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604240115198" />
+    <state x="0" y="341" key="FileChooserDialogImpl" timestamp="1604238780921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="341" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604238780921" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604198182437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604198182437" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604198182436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604198182436" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604198182437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604198182437" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1604304970146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604304970146" />
+    <state x="210" y="33" key="new project wizard" timestamp="1604305021560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="210" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604305021560" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="copy" />
+        <watch expression="((HashMap)map).entrySet().toArray()[0]" custom="java.util.HashMap" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
