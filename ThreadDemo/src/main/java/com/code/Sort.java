@@ -47,11 +47,6 @@ public class Sort {
         return nums;
     }
 
-    private static void swap(int[] nums, int i, int j) {
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
 
     //选择排序
 
@@ -151,6 +146,41 @@ public class Sort {
     }
 
     //堆排
+    public static void heapSort(int[] nums){
+        //先建堆
+        createHeap(nums);
+        for(int i = 0; i < nums.length-1; i++ ){
+            //交换
+            swap(nums,0,nums.length-i-1);
+            adjustUp(nums,nums.length-i-1,0);
+        }
+    }
+
+    private static void adjustUp(int[] nums, int size, int index) {
+        while(index*2+1<size){
+            int maxIndex = index*2+1;
+            if(maxIndex+1<size && nums[maxIndex] < nums[maxIndex+1]){
+                maxIndex +=1;
+            }
+            if(nums[index] >= nums[maxIndex]){
+                break;
+            }
+            swap(nums,index,maxIndex);
+            index = maxIndex;
+        }
+    }
+
+    private static void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+
+    private static void createHeap(int[] nums) {
+        for(int i = (nums.length-2)/2; i >=0 ;i--){
+            adjustUp(nums,nums.length,i);
+        }
+    }
 
     public static void main(String[] args) {
         int[] nums =new int[]{5,1,3,7,9,2,6,8};

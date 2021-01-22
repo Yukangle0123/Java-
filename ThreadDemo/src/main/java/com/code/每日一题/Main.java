@@ -1,8 +1,18 @@
 package com.code.每日一题;
 
-import jdk.nashorn.internal.ir.CallNode;
+
+
+
+
 
 import java.util.*;
+class ListNode{
+    int val;
+    ListNode next;
+    ListNode(int val){
+        this.val = val;
+    }
+}
 
 public class Main {
     public static void main1(String[] args) {
@@ -55,50 +65,72 @@ public class Main {
         }
         return getTotalCount(month-1)+getTotalCount(month-2);
     }
-    public static void heapSort(int[] nums){
-        //先建堆
-        createHeap(nums);
-        for(int i = 0; i < nums.length-1; i++ ){
-            //交换
-            swap(nums,0,nums.length-i-1);
-            adjustUp(nums,nums.length-i-1,0);
-        }
-    }
-
-    private static void adjustUp(int[] nums, int size, int index) {
-        while(index*2+1<size){
-            int maxIndex = index*2+1;
-            if(maxIndex+1<size && nums[maxIndex] < nums[maxIndex+1]){
-                maxIndex +=1;
+    public ListNode plusAB(ListNode a, ListNode b) {
+            ListNode fakeNode = new ListNode(-1);
+            ListNode cur = fakeNode;
+            int sum =0;
+            int carry = 0;//进位
+            while(a!=null && b!=null){
+                sum = a.val + b.val + carry;
+                cur.next = new ListNode(sum%10);
+                cur = cur.next;
+                carry = sum/10;
+                a = a.next;
+                b = b.next;
             }
-            if(nums[index] >= nums[maxIndex]){
-                break;
+            if(a == null && b == null){
+                if(carry != 0 ){
+                    cur.next =new ListNode(carry);
+                    return fakeNode.next;
+                }
             }
-            swap(nums,index,maxIndex);
-            index = maxIndex;
-        }
-    }
-
-    private static void swap(int[] nums, int i, int j) {
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
-
-    private static void createHeap(int[] nums) {
-        for(int i = (nums.length-2)/2; i >=0 ;i--){
-            adjustUp(nums,nums.length,i);
-        }
+            if(a == null && b !=null){
+                while(b!=null) {
+                    sum = b.val + carry;
+                    cur.next = new ListNode(sum%10);
+                    carry = sum/10;
+                    b = b.next;
+                    cur = cur.next;
+                }
+            }
+            if(a!=null){
+                while(a!=null){
+                    sum = a.val + carry;
+                    cur.next = new ListNode(sum%10);
+                    carry = sum/10;
+                    a = a.next;
+                    cur = cur.next;
+                }
+            }
+            if(carry!=0){
+                cur.next = new ListNode(carry);
+            }
+            return fakeNode.next;
     }
 
     public static void main(String[] args) {
-//       Scanner scanner = new Scanner(System.in);
-//       while(scanner.hasNext()){
-//           int month = scanner.nextInt();
-//           System.out.println(getTotalCount(month));
-//       }
-        int[] nums = new int[]{9,9,9,9,9,9,9};
-        heapSort(nums);
-        System.out.println(Arrays.toString(nums));
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext()){
+            String response = sc.nextLine();
+            String request = sc.nextLine();
+            Map<Character,Integer> map = new HashMap<>();
+            for(int i = 0; i < response.length(); i++){
+                int count = map.getOrDefault(response.charAt(i),0)+1;
+                map.put(response.charAt(i),count);
+            }
+            int res =0;
+           for(int i = 0; i < request.length(); i++){
+               int count = map.getOrDefault(request.charAt(i),0);
+               if(count<=0){
+                   res++;
+               }
+               map.put(request.charAt(i),count-1);
+           }
+           if(res == 0){
+               System.out.println("Yes"+" "+(response.length()-request.length()));
+           }else{
+               System.out.println("No"+" "+res);
+           }
+        }
     }
 }

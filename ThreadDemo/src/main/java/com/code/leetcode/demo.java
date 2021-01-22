@@ -1,5 +1,5 @@
 package com.code.leetcode;
-class ListNode{
+ class ListNode{
     ListNode next;
     int val;
     ListNode(int val){
@@ -7,7 +7,7 @@ class ListNode{
     }
 }
 
-public class demo {
+ class demo {
     public boolean chkPalindrome(ListNode head){
         if(head == null){
             return true;

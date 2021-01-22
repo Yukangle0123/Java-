@@ -69,6 +69,36 @@ public class Solution {
         }
     }
 
+    /**
+     * 判断数组中是否有重复元素
+     * @param nums
+     * @return
+     */
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length-1; i++){
+            if(nums[i] == nums[i+1]){
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean isLongPressedName(String name, String typed) {
+        int i = 0;
+        int j = 0;
+        while(j < typed.length()){
+            if(i < name.length() && name.charAt(i) == typed.charAt(j)){
+                i++;
+                j++;
+            }else if(j < typed.length() && typed[j] == name[i-1]){
+                j++;
+            }else{
+                return false;
+            }
+        }
+        return i == name.length();
+    }
+
     public static void main(String[] args) {
         System.out.println(lengthOfLastWord("a "));
     }
