@@ -107,8 +107,59 @@ public class Main {
             }
             return fakeNode.next;
     }
+    private   static  double point(int grade) {
+        double point = 0.0;
+        if (grade >= 90 && grade <= 100) {
+            point = 4.0;
+        } else if (grade >= 85 && grade <= 89) {
+            point = 3.7;
+        } else if (grade >= 82 && grade <= 84) {
+            point = 3.3;
+        } else if (grade >= 78 && grade <= 81) {
+            point = 3.0;
+        } else if (grade >= 75 && grade <= 77) {
+            point = 2.7;
+        } else if (grade >= 72 && grade <= 74) {
+            point = 2.3;
+        } else if (grade >= 68 && grade <= 71) {
+            point = 2.0;
+        } else if (grade >= 64 && grade <= 67) {
+            point = 1.5;
+        } else if (grade >= 60 && grade <= 63) {
+            point = 1.0;
+        } else if (grade < 60) {
+            point = 0;
+        }
+        return point;
+    }
 
+    private static double getAllPoint(int[] credits,int[] grades){
+        double[] points = new double[grades.length];
+        double res = 0.0;
+
+        for(int i = 0; i < grades.length; i++){
+            points[i] = point(grades[i]) * credits[i];
+            res += points[i];
+        }
+        return res/grades.length;
+    }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while(sc.hasNext()){
+            int subjectCount = sc.nextInt();
+            int[] credits = new int[subjectCount];
+            int[] grades = new int[subjectCount];
+            for(int i = 0; i < subjectCount; i++){
+                credits[i] = sc.nextInt();
+            }
+            for(int i = 0; i < subjectCount; i++){
+                grades[i] = sc.nextInt();
+            }
+            System.out.println(getAllPoint(credits,grades));
+        }
+    }
+
+    public static void main2(String[] args) {
         Scanner sc = new Scanner(System.in);
         while(sc.hasNext()){
             String response = sc.nextLine();

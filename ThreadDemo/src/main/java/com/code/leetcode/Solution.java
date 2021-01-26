@@ -141,7 +141,7 @@ public class Solution {
         }
         return dp[n-1];
     }
-    public int maxSubArray(int[] nums) {
+    public int maxSubArray1(int[] nums) {
         int[] dp = new int[nums.length];
         dp[0] = nums[0];
         for(int i = 1;i<nums.length;i++) {
@@ -979,21 +979,255 @@ public class Solution {
         }
         return new int[0];
     }
+    /**
+     * 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。
+     * 假设压入栈的所有数字均不相等。例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列
+     * {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
+     * @param pushed  压入序列
+     * @param popped  弹出序列
+     * @return
+     */
+    public boolean validateStackSequences(int[] pushed, int[] popped) {
+        Stack<Integer> stack = new Stack<>();
+        int index = 0;
+        for(int n : pushed){
+            if(!stack.isEmpty() && stack.peek() == popped[index]){
+                stack.pop();
+                index++;
+            }
+            stack.push(n);
+        }
+        return stack.isEmpty();
+    }
 
+    /**
+     * 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。
+     * 如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。
+     * @param postOrder
+     * @return
+     */
+    public boolean verifyPostOrder(int[] postOrder) {
+        return helper(postOrder,0,postOrder.length-1);
+    }
+
+    private boolean helper(int[] postOrder, int i, int j) {
+        if (i >= j){
+            return true;
+        }
+        int l = i;//l指的是二叉搜索树的左子树的下标索引
+        while(postOrder[l] < postOrder[j]){
+            l++;
+        }
+        //(i,l)//左子树的下标区间
+        int r = l;
+        while(postOrder[r] > postOrder[i]){
+            r++;
+        }
+        return r == j && helper(postOrder,i,l-1) && helper(postOrder,r,j-1);
+    }
+    public boolean verifyPostorder(int[] postOrder) {
+        Stack<Integer> stack = new Stack<>();
+        int root = Integer.MAX_VALUE;
+        for(int i = postOrder.length-1; i >=0; i--){
+            if(postOrder[i] > root){
+                return false;
+            }
+            while(!stack.isEmpty() && stack.peek() > postOrder[i]){
+                root = stack.pop();
+            }
+            stack.push(postOrder[i]);
+        }
+        return true;
+    }
+    public int majorityElement(int[] nums) {
+        int x = 0;
+        int count = 0;
+        for(int n : nums){
+            if(count == 0){
+                x = n;
+            }
+            count += (x==n ? 1 : -1);
+        }
+        return x;
+    }
+
+    /**
+     * 连续子数组的最大和
+     * 数组前i个元素的最大和
+     * @param nums
+     * @return
+     */
+    public int maxSubArray(int[] nums) {
+        int len = nums.length;
+        int[] dp = new int[len];
+        dp[0] = nums[0];
+        int res = nums[0];
+        for(int i = 1; i < len; i++){
+            dp[i] = Math.max(nums[i],dp[i-1] + nums[i]);
+            res =Math.max(dp[i],res);
+        }
+        return res;
+    }
+    public int[] getLeastNumbers1(int[] arr, int k) {
+        int[] res = new int[k];
+        if(k == 0){
+            return res;
+        }
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        for(int i = 0; i < k; i++){
+            queue.offer(arr[i]);
+        }
+        for(int i = k; i < arr.length; i++){
+            if(arr[i] < queue.peek()){
+                queue.poll();
+                queue.offer(arr[i]);
+            }
+        }
+        for(int i = 0; i < k; i++){
+            res[i] = queue.poll();
+        }
+        return res;
+    }
+    public int[] getLeastNumbers(int[] arr, int k) {
+        int[] res = new int[k];
+        Arrays.sort(arr);
+        for(int i = 0; i < k; i++){
+            res[i] = arr[i];
+        }
+        return res;
+    }
+
+    /**
+     * 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+     * @param digits
+     * @return
+     */
+    public static int[] plusOne(int[] digits) {
+        int dig = 1;//1 2 3
+        int len = digits.length-1;
+        for(int i = len; i >=0; i--){
+            int tmp = digits[i]+dig;
+            digits[i] = (digits[i] + dig)%10;
+            dig = tmp/10;
+        }
+        if(dig ==0){
+            return digits;
+        }
+        int[] res = new int[digits.length+1];
+        res[0] = 1;
+        System.arraycopy(digits,0,res,1,digits.length);
+        return res;
+    }
+    public int thirdMax(int[] nums) {
+        if (nums.length == 1) {
+            return nums[0];
+        }
+        if (nums.length == 2) {
+            return nums[0] > nums[1] ? nums[0] : nums[1];
+        }
+
+        long firstMax = Long.MIN_VALUE;
+        long secondMax = Long.MIN_VALUE;
+        long thirdMax = Long.MIN_VALUE;
+        for (int n : nums) {
+            if (n > firstMax) {
+                thirdMax = secondMax;
+                secondMax = firstMax;
+                firstMax = n;
+            } else if (firstMax == n){
+                continue;
+            }else  if (n > secondMax) {
+                thirdMax = secondMax;
+                secondMax = n;
+            } else if (n == secondMax) {
+                continue;
+            } else if (n > thirdMax) {
+                thirdMax = n;
+            }
+        }
+        return thirdMax == Long.MIN_VALUE ? (int)firstMax : (int)thirdMax;
+    }
+    public boolean isSubStructure(TreeNode A, TreeNode B) {
+        return (A != null && B != null) && (isSubStructureHelper(A,B)||
+                isSubStructure(A.left,B) || isSubStructure(A.right,B));
+    }
+    public boolean isSubStructureHelper(TreeNode A, TreeNode B){
+        if(B == null){
+            return true;
+        }
+        if(A == null || A.val != B.val){
+            return false;
+        }
+        return isSubStructureHelper(A.left,B.left) && isSubStructureHelper(A.right,B.right);
+    }
+    public int cuttingRope(int n) {
+        if (n < 4){
+            return n-1;
+        }
+        int mod = (int)1e9+7;
+        long res = 1;
+        while(n > 4 ){
+            res *= 3;
+            res %= mod;
+            n -=3;
+        }
+        return (int)(res*n%mod);
+    }
+    public static int add(int a, int b) {
+        //两数和 S = (非进位和) + (进位和)
+        // 8 + 5 = 10 + 3
+        while(b != 0){
+            int c = (a & b) << 1; //进位和
+            a ^= b;//非进位和
+            b = c;
+        }
+        return a;
+    }
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null || root ==p || root == q){
+            return root;
+        }
+        TreeNode left = lowestCommonAncestor(root.left,p,q);
+        TreeNode right = lowestCommonAncestor(root.right,p,q);
+        if(left == null && right == null){
+            return null;
+        }
+        if(left == null){
+            return right;
+        }
+        if(right == null){
+            return left;
+        }
+        return root;
+    }
+    private static int getDeath(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        return 1 + Math.max(getDeath(root.left),getDeath(root.right));
+    }
+    public static boolean isBalanced(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        return Math.abs(getDeath(root.left) - getDeath(root.right)) <=1 && isBalanced(root.left)
+                && isBalanced(root.right);
+    }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
-//        List <String> list = new LinkedList<>();
-//        list.add("go");
-//        list.add("goal");
-//        list.add("goals");
-//        list.add("special");
-//        System.out.println(s.wordBreak("goalspecial", list));
-  //      System.out.println(s.uniquePathsWithObstacles(new int[][]{new int[]{1,0}}));
-//        s.rotate(new int[]{1,2},3);
-//        System.out.println(s.maxValue(new int[][]{{1, 2, 5}, {3, 2, 1}}));
-//        System.out.println(s.canConstruct("aa", "aab"));
-        System.out.println(s.spiralOrder(new int[][]{{1}}));
+//        int[] nums = {9,9};
+//        System.out.println(Arrays.toString(plusOne(nums)));
+        TreeNode root = new TreeNode(1);
+        TreeNode node1 = new TreeNode(2);
+        TreeNode node2 = new TreeNode(3);
+        root.right = node1;
+        node1.right = node2;
+        System.out.println(isBalanced(root));
     }
     class LevelNode{
         TreeNode node;
