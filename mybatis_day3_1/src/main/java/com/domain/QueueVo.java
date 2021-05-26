@@ -1,0 +1,13 @@
+package com.domain;
+import java.util.*;
+public class QueueVo {
+    private List<Integer> ids;
+
+    public List<Integer> getIds() {
+        return ids;
+    }
+
+    public void setIds(List<Integer> ids) {
+        this.ids = ids;
+    }
+}
